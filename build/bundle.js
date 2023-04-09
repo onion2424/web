@@ -2468,7 +2468,7 @@ var app = (function () {
     	return block;
     }
 
-    // (10:3) <Link to="about">
+    // (10:3) <Link to="#/about">
     function create_default_slot_2(ctx) {
     	let t;
 
@@ -2488,14 +2488,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(10:3) <Link to=\\\"about\\\">",
+    		source: "(10:3) <Link to=\\\"#/about\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (16:3) <Route path="about">
+    // (16:3) <Route path="#/about">
     function create_default_slot_1(ctx) {
     	let about;
     	let current;
@@ -2527,7 +2527,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(16:3) <Route path=\\\"about\\\">",
+    		source: "(16:3) <Route path=\\\"#/about\\\">",
     		ctx
     	});
 
@@ -2558,7 +2558,7 @@ var app = (function () {
 
     	link1 = new Link({
     			props: {
-    				to: "about",
+    				to: "#/about",
     				$$slots: { default: [create_default_slot_2] },
     				$$scope: { ctx }
     			},
@@ -2572,7 +2572,7 @@ var app = (function () {
 
     	route1 = new Route({
     			props: {
-    				path: "about",
+    				path: "#/about",
     				$$slots: { default: [create_default_slot_1] },
     				$$scope: { ctx }
     			},
@@ -2592,7 +2592,7 @@ var app = (function () {
     			create_component(route1.$$.fragment);
     			add_location(nav, file, 7, 1, 196);
     			attr_dev(main, "class", "svelte-1hoym3u");
-    			add_location(main, file, 11, 1, 271);
+    			add_location(main, file, 11, 1, 273);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, nav, anchor);
